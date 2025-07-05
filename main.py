@@ -11,7 +11,8 @@ import threading
 
 intents = discord.Intents.default()
 intents.members = True
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents, voice_client_cls=None)
+
 
 GUILD_ID = 126311965126688769  # ID du serveur Discord
 
